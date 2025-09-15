@@ -9,12 +9,12 @@ Welcome to **MyEcommerceApp**! This project showcases a powerful backend archite
 
 ## ✨ Core Features
 
-	* ✅ **Products Service:** Full CRUD operations for everything you sell.
-	* ✅ **Orders Service:** Effortlessly create and view customer orders.
-	* ✅ **API Gateway:** A single, secure entry point with JWT authentication.
-	* ✅ **Modern UI:** A user-friendly interface built with Next.js and React.
-	* ✅ **Containerized:** Spin everything up with one command using Docker Compose.
-	* ✅ **Developer Friendly:** Comes with Swagger docs and a Postman collection out-of-the-box.
+	 ✅ Products Service: Full CRUD operations for everything you sell.
+	 ✅ Orders Service: Effortlessly create and view customer orders.
+	 ✅ API Gateway: A single, secure entry point with JWT authentication.
+	 ✅ Modern UI: A user-friendly interface built with Next.js and React.
+	 ✅ Containerized: Spin everything up with one command using Docker Compose.
+	 ✅ Developer Friendly: Comes with Swagger docs and a Postman collection out-of-the-box.
 
 -----
 
@@ -57,10 +57,10 @@ Ready to launch? Just follow these simple steps.
 
 		Your application is now running!
 
-			* 📦 **Products Service**: `http://localhost:3001`
-			* 🛒 **Orders Service**: `http://localhost:3002`
-			* 🚪 **API Gateway**: `http://localhost:3000`
-			* 🖥️ **UI**: `http://localhost:4200`
+			 📦 Products Service: `http://localhost:3001`
+			 🛒 Orders Service: `http://localhost:3002`
+			 🚪 API Gateway: `http://localhost:3000`
+			 🖥️ UI: `http://localhost:4200`
 
 -----
 
@@ -79,13 +79,13 @@ npx nx test orders
 
 You can explore and test the APIs using Swagger or Postman.
 
-	* **Swagger UI** 📖
+	Swagger UI 📖
 
-			* **Gateway (Main Docs):** `http://localhost:3000/api`
-			* **Products Service:** `http://localhost:3001/api`
-			* **Orders Service:** `http://localhost:3002/api`
+			Gateway (Main Docs): `http://localhost:3000/api`
+			Products Service: `http://localhost:3001/api`
+			Orders Service: `http://localhost:3002/api`
 
-	* **Postman** 🧑‍🚀
+	Postman 🧑‍🚀
 		A ready-to-use collection is included! Just import `postman_collection.json` into Postman.
 
 -----
