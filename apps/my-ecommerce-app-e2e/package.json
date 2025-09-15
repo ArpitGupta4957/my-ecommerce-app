@@ -1,0 +1,26 @@
+{
+  "name": "@my-ecommerce-app/my-ecommerce-app-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@my-ecommerce-app/my-ecommerce-app"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/my-ecommerce-app-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@my-ecommerce-app/my-ecommerce-app:build",
+          "@my-ecommerce-app/my-ecommerce-app:serve"
+        ]
+      }
+    }
+  }
+}
