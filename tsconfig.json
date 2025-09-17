@@ -10,24 +10,6 @@
       "path": "./apps/my-ecommerce-app"
     },
     {
-      "path": "./products-e2e"
-    },
-    {
-      "path": "./products"
-    },
-    {
-      "path": "./orders-e2e"
-    },
-    {
-      "path": "./orders"
-    },
-    {
-      "path": "./api-gateway-e2e"
-    },
-    {
-      "path": "./api-gateway"
-    },
-    {
       "path": "./apps/products-e2e"
     },
     {
@@ -44,6 +26,12 @@
     },
     {
       "path": "./apps/api-gateway"
+    },
+    {
+      "path": "./apps/ui-e2e"
+    },
+    {
+      "path": "./apps/ui"
     }
   ]
 }
