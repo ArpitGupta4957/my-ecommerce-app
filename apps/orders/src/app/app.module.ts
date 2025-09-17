@@ -11,11 +11,11 @@ import { OrderController } from './order.controller';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'postgres',
-      password: 'postgres',
-      database: 'orders_db',
+      host: process.env.ORDERS_DB_HOST || 'localhost',
+      port: parseInt(process.env.ORDERS_DB_PORT || '5432', 10),
+      username: process.env.ORDERS_DB_USERNAME || 'postgres',
+      password: process.env.ORDERS_DB_PASSWORD || 'postgres',
+      database: process.env.ORDERS_DB_NAME || 'orders_db',
       autoLoadEntities: true,
       synchronize: true, // Set to false in production
     }),

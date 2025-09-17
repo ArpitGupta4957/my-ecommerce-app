@@ -11,11 +11,11 @@ import { ProductController } from './product.controller';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'postgres',
-      password: 'postgres',
-      database: 'products_db',
+      host: process.env.PRODUCTS_DB_HOST || 'localhost',
+      port: parseInt(process.env.PRODUCTS_DB_PORT || '5432', 10),
+      username: process.env.PRODUCTS_DB_USERNAME || 'postgres',
+      password: process.env.PRODUCTS_DB_PASSWORD || 'postgres',
+      database: process.env.PRODUCTS_DB_NAME || 'products_db',
       autoLoadEntities: true,
       synchronize: true, // Set to false in production
     }),
